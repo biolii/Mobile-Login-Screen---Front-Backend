@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registre-se</title>
+    <link rel="stylesheet" href="Registro.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="fontawesome-free-6.5.2-web/css/all.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<div class="container">
+
+    <body>
+        <h1>Crie sua conta</h1>
+        <p>e junte-se ao time</p>
+        <input type="text" id="username" name="Login" placeholder="E-mail" required>
+
+        <input type="password" id="password" name="Senha" placeholder="Senha" required>
+        <button class="mostrarSenhaBtn" id="mostrarSenhaBtn">
+            <i class="fa-solid fa-eye fa-2xl" style="color: #ffffff;"></i>
+        </button>
+
+        <input type="password" id="confirmarsenha" name="Senha" placeholder="Confirmar senha" required>
+        <button class="mostrarSenhaBtn2" id="mostrarSenhaBtn2">
+            <i class="fa-solid fa-eye fa-2xl" style="color: #ffffff;"></i>
+        </button>
+
+        <button class="registerBtn">Registre-se</button>
+        <p class="google">Ou faça registre-se com</p>
+        <button class="googleBtn"><img src="./images/Google.svg" alt=""></button>
+    </body>
+    <footer>
+        <p>Ja tem uma conta?</p>
+        <a href="Login.html">Faça login</a>
+    </footer>
+    <script>
+    function togglePasswordVisibility(inputId) {
+        var input = document.getElementById(inputId);
+        if (input.type === "password") {
+            input.type = "text";
+        } else {
+            input.type = "password";
+        }
+    }
+
+    // Adiciona um evento de clique ao primeiro botão mostrarSenhaBtn
+    document.getElementById("mostrarSenhaBtn").addEventListener("click", function() {
+        togglePasswordVisibility("password");
+    });
+
+    // Adiciona um evento de clique ao segundo botão mostrarSenhaBtn2
+    document.getElementById("mostrarSenhaBtn2").addEventListener("click", function() {
+        togglePasswordVisibility("confirmarsenha"); // ajuste o ID conforme necessário
+    });
+</script>
+</div>
+</html>

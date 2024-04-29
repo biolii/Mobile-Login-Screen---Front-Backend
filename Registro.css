@@ -1,0 +1,138 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 360px; 
+    height: 640px; 
+    font-family: 'Poppins';
+    border-radius: 20px; 
+    background-color: #fff; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    overflow: hidden; 
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    background: linear-gradient(to bottom, #630091, #878CFF 25%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body {
+    color: white;
+}
+
+h1 {
+    margin-top: 60px;
+}
+
+body p {
+    font-size: 20px;
+    margin-bottom: 43px;
+}
+
+input {
+    width: 300px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 10px;
+    border-style: none;
+    border: 2px solid #fff;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: 300;
+    background-color: transparent;
+    color: white;
+    outline: none;
+}
+
+input::placeholder {
+    color: #fff;
+}
+
+.registerBtn {
+    margin-top: 15px;
+    width: 300px;
+    height: 50px;
+    border-style: none;
+    background-color: #fff;
+    font-size: 25px;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.registerBtn:hover {
+    background-color: #e7e7e7;
+}
+
+.google {
+    font-size: 10px;
+
+
+}
+
+.googleBtn {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    margin-top: 500px;
+    background-color: transparent;
+    border-style: none;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.googleBtn img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+
+}
+
+.googleBtn:hover {
+    opacity: 90%;
+    background-color: #e7e7e7;
+}
+
+
+footer {
+    display: flex;
+    flex-direction: row;
+    margin-top: 80px;
+    position: fixed;
+    top: 66%;
+}
+
+footer p{
+    color: #000;
+    font-size: 10px;
+}
+
+footer a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 10px;
+    margin-left: 3px;
+}
+
+.mostrarSenhaBtn {
+    background-color: transparent;
+    position: absolute;
+    border-style: none;
+    top: 43.6%;
+    left: 72%;
+    cursor: pointer;
+}
+
+.mostrarSenhaBtn2 {
+    background-color: transparent;
+    position: absolute;
+    border-style: none;
+    top: 54.7%;
+    left: 72%;
+    cursor: pointer;
+}
